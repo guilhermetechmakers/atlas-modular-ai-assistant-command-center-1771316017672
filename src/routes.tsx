@@ -6,6 +6,7 @@ import { SignupPage } from '@/pages/signup'
 import { ResetPasswordPage } from '@/pages/reset-password'
 import { DashboardOverviewPage } from '@/pages/dashboard-overview'
 import { DashboardPlaceholderPage } from '@/pages/dashboard-placeholder'
+import { ProjectsGitHubPage } from '@/pages/projects-github'
 import { HelpPage } from '@/pages/help'
 import { LegalPage } from '@/pages/legal'
 import { NotFoundPage } from '@/pages/not-found'
@@ -21,7 +22,8 @@ export const router = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       { index: true, element: <DashboardOverviewPage /> },
-      { path: 'projects', element: <DashboardPlaceholderPage /> },
+      { path: 'projects', element: <ProjectsGitHubPage /> },
+      { path: 'projects-github', element: <ProjectsGitHubPage /> },
       { path: 'content', element: <DashboardPlaceholderPage /> },
       { path: 'research', element: <DashboardPlaceholderPage /> },
       { path: 'calendar', element: <DashboardPlaceholderPage /> },
